@@ -5,7 +5,7 @@ RUN apk update && apk add \
     --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
     && rm -rf /var/cache/apk/*
 
-EXPOSE 9050
+EXPOSE 9050 9052 9053 9054
 
 COPY torrc.default /etc/tor/torrc.default
 
